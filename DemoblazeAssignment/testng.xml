@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite">
+<parameter name = "browser" value = "Chrome"/>
+<listeners>
+	<listener class-name = "com.demoblaze.utility.ExtentReporterNG"/>
+	<listener class-name = "com.demoblaze.utility.ListenerSetup"/>
+</listeners>
+  <test thread-count="5" name="Regression Test">
+  <classes>
+  	<class name = "com.demoblaze.testLayer.Demo"/>
+  </classes>
+  </test> <!-- Regression Test -->
+</suite> <!-- Regression Suite -->
